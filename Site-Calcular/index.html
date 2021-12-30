@@ -17,23 +17,27 @@
             margin-top: 20px;
         }
         div#tela{
-            
+            background-color: rgba(255, 255, 0, 0.342);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
         }
     </style>
 
 </head>
 <body>
     <h1> Somando Valores: </h1>
-    <div id="tela">
-        <input type="number" name="txtn1" id="txtn1">
-        <input type="number" name="txtn2" id="txtn2">
-        <input type="button" value="SOMAR" onclick="somar()">
-    </div>
-    <div id="res"> Resultado..</div>
+        <div id="tela">
+            <input type="number" name="txtn1" id="txtn1">
+            <input type="number" name="txtn2" id="txtn2">
+            <input type="button" value="SOMAR" onclick="somar()">
+            <div id="res"> Resultado..</div>
+        </div>
     <script>
         function somar(){
-            var tn1 = window.getElementById('txtn1')
-            var tn2 = window.getElementById('txtn2')
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
             var res = window.document.getElementById('res')
             var n1 = Number(tn1.value)
             var n2 = Number(tn2.value)
