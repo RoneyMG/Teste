@@ -7,33 +7,39 @@
     <title>Somando Números</title>
     <style>
         body{
-            font: normal 18pt Arial;
+            font: normal 14pt Arial;
+            background-color: rgba(130, 255, 13, 0.911)
         }
         input{
-            font: normal 18pt Arial;
+            font: normal 12pt Arial;
             width: 100px;
+            position: relative;
+            margin-right: 10px;
         }
         div#res{
             margin-top: 20px;
         }
         div#tela{
-            background-color: rgba(255, 255, 0, 0.342);
+            background-color: rgba(255, 255, 0, 0.767);
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
+            height: 300px;
+            width: 200px;
+            text-align: center;
         }
     </style>
 
 </head>
 <body>
-    <h1> Somando Valores: </h1>
-        <div id="tela">
-            <input type="number" name="txtn1" id="txtn1">
-            <input type="number" name="txtn2" id="txtn2">
-            <input type="button" value="SOMAR" onclick="somar()">
-            <div id="res"> Resultado..</div>
-        </div>
+    <div id="tela">
+        <h4> Somando Valores: </h4>
+        <input type="number" name="txtn1" id="txtn1">
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="SOMAR" onclick="somar()">
+        <div id="res"> Resultado..</div>
+    </div>
     <script>
         function somar(){
             var tn1 = window.document.getElementById('txtn1')
